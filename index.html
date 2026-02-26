@@ -113,11 +113,10 @@
 
     <div class="card2">
         <h2 style="text-align: left;">Streaming Inference Comparison</h2>
+        <strong>🎧 Listen to the comparisons below across different gender combinations.</strong> In overlapping scenarios (like Male+Male, female+female), our method delivers cleaner and more natural target speech than the baseline.
         <p>
-            Under the 560ms chunk size constraint.
+            Note: Under the 560ms chunk size constraint.
         </p>
-            <strong>🎧 Listen to the comparisons below across different gender combinations.</strong> In overlapping scenarios (like Male+Male, female+female), our method delivers cleaner and more natural target speech than the baseline.
-        
         <div class="table_wrapper">
             <table>
                 <thead>
@@ -169,11 +168,13 @@
     <div class="card2">
         <h2 style="text-align: left;">Ablation: Historical Context Refinement(HCR) </h2>
         <p>
-            Under the 560ms chunk size constraint, speech is segmented into audio blocks for streaming case. This truncation often disrupts the phase and semantic coherence between adjacent segments, resulting in perceived stuttering and artifacts.
+            🎧<strong>Improved with HCR</strong>, the extracted target speech is clearly smoother, more natural, and significantly more intelligible compared to the w/o HCR baseline.
+        </p>
+        <p>
+            Speech is segmented into audio blocks for streaming scenario, This truncation often disrupts the phase and semantic coherence between adjacent segments, resulting in perceived stuttering and artifacts.
             The <strong>HCR mechanism</strong> is designed to address this issue. 
         </p>
-            🎧You can clearly hear that compared to the w/o HCR, the extracted target speech is smoother, more natural, and the overall intelligibility is significantly <strong>improved with HCR</strong>.
-
+        Note: Under the 560ms chunk size constraint.
         <div class="table_wrapper">
             <table>
                 <thead>
