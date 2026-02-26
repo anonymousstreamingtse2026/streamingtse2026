@@ -1,0 +1,86 @@
+const data_list = [
+    {
+        "combo":"Male+Female",
+        "mixed_speech": "demo/libri2mix_ablation_HCR/mix_clean/61-70968-0000_8555-292519-0000.wav",
+        "ref_speech": "demo/libri2mix_ablation_HCR/ref/61-70968-0000_8555-292519-0000.wav",
+        "laura_tse": "demo/libri2mix_lauratse_ours_gt/lauratse/61-70968-0000_8555-292519-0000.wav",
+        "our_proposed": "demo/libri2mix_ablation_HCR/use_last_chunk/61-70968-0000_8555-292519-0000.wav",
+        "ground_truth": "demo/libri2mix_ablation_HCR/gt/61-70968-0000_8555-292519-0000.wav",
+    },
+    {
+        "combo":"Male+Female",
+        "mixed_speech": "demo/libri2mix_ablation_HCR/mix_clean/61-70968-0016_2961-961-0015.wav",
+        "ref_speech": "demo/libri2mix_ablation_HCR/ref/61-70968-0016_2961-961-0015.wav",
+        "laura_tse": "demo/libri2mix_lauratse_ours_gt/lauratse/61-70968-0016_2961-961-0015.wav",
+        "our_proposed": "demo/libri2mix_ablation_HCR/use_last_chunk/61-70968-0016_2961-961-0015.wav",
+        "ground_truth": "demo/libri2mix_ablation_HCR/gt/61-70968-0016_2961-961-0015.wav",
+    },
+    {
+        "combo":"Male+Male",
+        "mixed_speech": "demo/libri2mix_ablation_HCR/mix_clean/61-70968-0028_7021-79730-0007.wav",
+        "ref_speech": "demo/libri2mix_ablation_HCR/ref/61-70968-0028_7021-79730-0007.wav",
+        "laura_tse": "demo/libri2mix_lauratse_ours_gt/lauratse/61-70968-0028_7021-79730-0007.wav",
+        "our_proposed": "demo/libri2mix_ablation_HCR/use_last_chunk/61-70968-0028_7021-79730-0007.wav",
+        "ground_truth": "demo/libri2mix_ablation_HCR/gt/61-70968-0028_7021-79730-0007.wav",
+    },
+    {
+        "combo":"Female+Male",
+        "mixed_speech": "demo/libri2mix_ablation_HCR/mix_clean/1580-141083-0015_7127-75947-0008.wav",
+        "ref_speech": "demo/libri2mix_ablation_HCR/ref/1580-141083-0015_7127-75947-0008.wav",
+        "laura_tse": "demo/libri2mix_lauratse_ours_gt/lauratse/1580-141083-0015_7127-75947-0008.wav",
+        "our_proposed": "demo/libri2mix_ablation_HCR/use_last_chunk/1580-141083-0015_7127-75947-0008.wav",
+        "ground_truth": "demo/libri2mix_ablation_HCR/gt/1580-141083-0015_7127-75947-0008.wav",
+    },
+    {
+        "combo":"Female+Female",
+        "mixed_speech": "demo/libri2mix_ablation_HCR/mix_clean/121-127105-0005_237-134493-0003.wav",
+        "ref_speech": "demo/libri2mix_ablation_HCR/ref/121-127105-0005_237-134493-0003.wav",
+        "laura_tse": "demo/libri2mix_lauratse_ours_gt/lauratse/121-127105-0005_237-134493-0003.wav",
+        "our_proposed": "demo/libri2mix_ablation_HCR/use_last_chunk/121-127105-0005_237-134493-0003.wav",
+        "ground_truth": "demo/libri2mix_ablation_HCR/gt/121-127105-0005_237-134493-0003.wav",
+    },
+
+]
+
+const data_list_hcr = [
+    {
+        "combo":"Male+Female",
+        "mixed_speech": "demo/libri2mix_ablation_HCR/mix_clean/61-70968-0000_8555-292519-0000.wav",
+        "ref_speech": "demo/libri2mix_ablation_HCR/ref/61-70968-0000_8555-292519-0000.wav",
+        "without_HCR": "demo/libri2mix_ablation_HCR/no_use_last_chunk/61-70968-0000_8555-292519-0000.wav",
+        "our_proposed": "demo/libri2mix_ablation_HCR/use_last_chunk/61-70968-0000_8555-292519-0000.wav",
+        "ground_truth": "demo/libri2mix_ablation_HCR/gt/61-70968-0000_8555-292519-0000.wav",
+    },
+    {
+        "combo":"Male+Female",
+        "mixed_speech": "demo/libri2mix_ablation_HCR/mix_clean/61-70968-0016_2961-961-0015.wav",
+        "ref_speech": "demo/libri2mix_ablation_HCR/ref/61-70968-0016_2961-961-0015.wav",
+        "without_HCR": "demo/libri2mix_ablation_HCR/no_use_last_chunk/61-70968-0016_2961-961-0015.wav",
+        "our_proposed": "demo/libri2mix_ablation_HCR/use_last_chunk/61-70968-0016_2961-961-0015.wav",
+        "ground_truth": "demo/libri2mix_ablation_HCR/gt/61-70968-0016_2961-961-0015.wav",
+    },
+    {
+        "combo":"Male+Male",
+        "mixed_speech": "demo/libri2mix_ablation_HCR/mix_clean/61-70968-0028_7021-79730-0007.wav",
+        "ref_speech": "demo/libri2mix_ablation_HCR/ref/61-70968-0028_7021-79730-0007.wav",
+        "without_HCR": "demo/libri2mix_ablation_HCR/no_use_last_chunk/61-70968-0028_7021-79730-0007.wav",
+        "our_proposed": "demo/libri2mix_ablation_HCR/use_last_chunk/61-70968-0028_7021-79730-0007.wav",
+        "ground_truth": "demo/libri2mix_ablation_HCR/gt/61-70968-0028_7021-79730-0007.wav",
+    },
+    {
+        "combo":"Female+Male",
+        "mixed_speech": "demo/libri2mix_ablation_HCR/mix_clean/1580-141083-0015_7127-75947-0008.wav",
+        "ref_speech": "demo/libri2mix_ablation_HCR/ref/1580-141083-0015_7127-75947-0008.wav",
+        "without_HCR": "demo/libri2mix_ablation_HCR/no_use_last_chunk/1580-141083-0015_7127-75947-0008.wav",
+        "our_proposed": "demo/libri2mix_ablation_HCR/use_last_chunk/1580-141083-0015_7127-75947-0008.wav",
+        "ground_truth": "demo/libri2mix_ablation_HCR/gt/1580-141083-0015_7127-75947-0008.wav",
+    },
+    {
+        "combo":"Female+Female",
+        "mixed_speech": "demo/libri2mix_ablation_HCR/mix_clean/121-127105-0005_237-134493-0003.wav",
+        "ref_speech": "demo/libri2mix_ablation_HCR/ref/121-127105-0005_237-134493-0003.wav",
+        "without_HCR": "demo/libri2mix_ablation_HCR/no_use_last_chunk/121-127105-0005_237-134493-0003.wav",
+        "our_proposed": "demo/libri2mix_ablation_HCR/use_last_chunk/121-127105-0005_237-134493-0003.wav",
+        "ground_truth": "demo/libri2mix_ablation_HCR/gt/121-127105-0005_237-134493-0003.wav",
+    },
+]
